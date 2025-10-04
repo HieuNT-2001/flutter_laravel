@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hoc_flutter/screens/start/start.dart';
+import 'package:hoc_flutter/screens/roll_dice/roll_dice.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       // theme: ThemeData(fontFamily: 'DancingScript'),
       // home: SafeArea(child: UserList()),
-      home: Start(),
+      home: RollDice(),
       debugShowCheckedModeBanner: false,
     );
   }
