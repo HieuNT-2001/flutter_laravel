@@ -3,13 +3,13 @@ import 'package:hoc_flutter/model/user.dart';
 import 'package:http/http.dart' as http;
 
 class UserService {
-  static const String baseUrl = "http://10.0.2.2:8000/api/users";
+  static const String baseUrl = 'http://10.0.2.2:8000/api/users';
 
   /// Create
   Future<User?> createUser(User user) async {
     final response = await http.post(
       Uri.parse(baseUrl),
-      headers: {"Content-Type": "application/json"},
+      headers: {'Content-Type': 'application/json'},
       body: user.toJson(),
     );
 
@@ -31,7 +31,7 @@ class UserService {
 
   /// Read one
   Future<User?> getUserById(String id) async {
-    final response = await http.get(Uri.parse("$baseUrl/$id"));
+    final response = await http.get(Uri.parse('$baseUrl/$id'));
     if (response.statusCode == 200) {
       return User.fromJson(response.body);
     }
@@ -41,8 +41,8 @@ class UserService {
   /// Update
   Future<User?> updateUser(User user) async {
     final response = await http.put(
-      Uri.parse("$baseUrl/${user.id}"),
-      headers: {"Content-Type": "application/json"},
+      Uri.parse('$baseUrl/${user.id}'),
+      headers: {'Content-Type': 'application/json'},
       body: user.toJson(),
     );
     if (response.statusCode == 200) {
@@ -53,7 +53,7 @@ class UserService {
 
   /// Delete
   Future<bool> deleteUser(int id) async {
-    final response = await http.delete(Uri.parse("$baseUrl/$id"));
+    final response = await http.delete(Uri.parse('$baseUrl/$id'));
     return response.statusCode == 200;
   }
 }

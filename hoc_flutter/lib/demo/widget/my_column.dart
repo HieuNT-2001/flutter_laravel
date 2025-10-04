@@ -19,7 +19,7 @@ class MyColumn extends StatelessWidget {
               backgroundColor: Colors.pink,
               foregroundColor: Colors.white,
             ),
-            child: const Text("Button 1", style: TextStyle(fontSize: 15)),
+            child: const Text('Button 1', style: TextStyle(fontSize: 15)),
           ),
           ElevatedButton(
             onPressed: () {},
@@ -27,7 +27,7 @@ class MyColumn extends StatelessWidget {
               backgroundColor: Colors.pink,
               foregroundColor: Colors.white,
             ),
-            child: const Text("Button 2", style: TextStyle(fontSize: 15)),
+            child: const Text('Button 2', style: TextStyle(fontSize: 15)),
           ),
           ElevatedButton(
             onPressed: () {},
@@ -35,7 +35,7 @@ class MyColumn extends StatelessWidget {
               backgroundColor: Colors.pink,
               foregroundColor: Colors.white,
             ),
-            child: const Text("Button 3", style: TextStyle(fontSize: 15)),
+            child: const Text('Button 3', style: TextStyle(fontSize: 15)),
           ),
         ],
       ),

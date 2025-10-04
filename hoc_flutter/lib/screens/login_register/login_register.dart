@@ -12,7 +12,7 @@ class LoginRegister extends StatefulWidget {
 }
 
 class _LoginRegisterState extends State<LoginRegister> {
-  final Uri _url = Uri.parse("https://vuatho.com/vi/terms-and-condition");
+  final Uri _url = Uri.parse('https://vuatho.com/vi/terms-and-condition');
   final _phoneController = TextEditingController();
   bool isEnabled = false;
 
@@ -41,13 +41,13 @@ class _LoginRegisterState extends State<LoginRegister> {
         child: Column(
           children: [
             const Text(
-              "Nhập số điện thoại của bạn để bắt đầu",
+              'Nhập số điện thoại của bạn để bắt đầu',
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 16),
             const Text(
-              "Một mã sẽ được gửi đến số điện thoại của bạn để xác minh rằng nó thuộc về bạn.",
+              'Một mã sẽ được gửi đến số điện thoại của bạn để xác minh rằng nó thuộc về bạn.',
               style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
               textAlign: TextAlign.center,
             ),
@@ -94,10 +94,10 @@ class _LoginRegisterState extends State<LoginRegister> {
                 style: const TextStyle(fontSize: 16, color: Colors.black),
                 children: [
                   const TextSpan(
-                    text: "Thông qua việc tiếp tục, bạn đã chấp nhận ",
+                    text: 'Thông qua việc tiếp tục, bạn đã chấp nhận ',
                   ),
                   TextSpan(
-                    text: "điều khoản & chính sách",
+                    text: 'điều khoản & chính sách',
                     style: const TextStyle(
                       color: Colors.blue,
                       fontWeight: FontWeight.bold,
@@ -105,7 +105,7 @@ class _LoginRegisterState extends State<LoginRegister> {
                     ),
                     recognizer: TapGestureRecognizer()..onTap = _launchUrl,
                   ),
-                  const TextSpan(text: " sử dụng của Vua Thợ"),
+                  const TextSpan(text: ' sử dụng của Vua Thợ'),
                 ],
               ),
             ),
@@ -119,7 +119,7 @@ class _LoginRegisterState extends State<LoginRegister> {
                 disabledBackgroundColor: Colors.grey,
               ),
               child: const Text(
-                "Đăng nhập",
+                'Đăng nhập',
                 style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
               ),
             ),

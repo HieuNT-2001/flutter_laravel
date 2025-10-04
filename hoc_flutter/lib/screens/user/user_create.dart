@@ -42,7 +42,7 @@ class _UserCreateState extends State<UserCreate> {
     if (!mounted) return;
     ScaffoldMessenger.of(
       context,
-    ).showSnackBar(const SnackBar(content: Text("Đã lưu User vào DB")));
+    ).showSnackBar(const SnackBar(content: Text('Đã lưu User vào DB')));
 
     Navigator.pop(
       context,
@@ -169,7 +169,7 @@ class _UserCreateState extends State<UserCreate> {
                           onDateSelected: (date) {
                             _selectedDate = date;
                             _dateController.text =
-                                "${date.day}/${date.month}/${date.year}";
+                                '${date.day}/${date.month}/${date.year}';
                           },
                         ),
                         decoration: const InputDecoration(
@@ -187,7 +187,7 @@ class _UserCreateState extends State<UserCreate> {
                 width: double.infinity,
                 child: ElevatedButton.icon(
                   icon: const Icon(Icons.save),
-                  label: const Text("Lưu người dùng"),
+                  label: const Text('Lưu người dùng'),
                   onPressed: _submit,
                 ),
               ),

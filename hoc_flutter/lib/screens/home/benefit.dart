@@ -10,7 +10,7 @@ class Benefit extends StatefulWidget {
 }
 
 class _BenefitState extends State<Benefit> {
-  final Uri _url = Uri.parse("https://vuatho.com/vi#worker-benefit");
+  final Uri _url = Uri.parse('https://vuatho.com/vi#worker-benefit');
 
   Future<void> _launchBenefits() async {
     if (!await launchUrl(_url, mode: LaunchMode.inAppWebView)) {
@@ -24,7 +24,7 @@ class _BenefitState extends State<Benefit> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         const Text(
-          "Quyền lợi",
+          'Quyền lợi',
           style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
         ),
         ...List.generate(3, (index) {
@@ -37,7 +37,7 @@ class _BenefitState extends State<Benefit> {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
                 image: const DecorationImage(
-                  image: AssetImage("assets/images/Benefit.jpg"),
+                  image: AssetImage('assets/images/Benefit.jpg'),
                   fit: BoxFit.fill,
                 ),
               ),

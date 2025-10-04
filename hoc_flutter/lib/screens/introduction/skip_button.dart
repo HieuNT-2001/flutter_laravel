@@ -13,10 +13,10 @@ class SkipButton extends StatelessWidget {
         MaterialPageRoute(builder: (context) => Home(role: role)),
       ),
       style: TextButton.styleFrom(
-        foregroundColor: role == "customer" ? Colors.amber : Colors.blue[900],
+        foregroundColor: role == 'customer' ? Colors.amber : Colors.blue[900],
       ),
       child: const Text(
-        "Bỏ qua",
+        'Bỏ qua',
         style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
       ),
     );

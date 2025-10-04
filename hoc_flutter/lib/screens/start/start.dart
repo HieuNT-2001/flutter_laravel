@@ -12,7 +12,7 @@ class Start extends StatefulWidget {
 }
 
 class _StartState extends State<Start> {
-  String role = "";
+  String role = '';
 
   @override
   Widget build(BuildContext context) {
@@ -24,18 +24,18 @@ class _StartState extends State<Start> {
           children: [
             const SizedBox(height: 30),
             const Text(
-              "Bạn là Khách hay là Thợ?",
+              'Bạn là Khách hay là Thợ?',
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 30),
             CustomerSelect(
-              isSelected: role == "customer",
-              onSelect: () => setState(() => role = "customer"),
+              isSelected: role == 'customer',
+              onSelect: () => setState(() => role = 'customer'),
             ),
             const SizedBox(height: 30),
             WorkerSelect(
-              isSelected: role == "worker",
-              onSelect: () => setState(() => role = "worker"),
+              isSelected: role == 'worker',
+              onSelect: () => setState(() => role = 'worker'),
             ),
             const SizedBox(height: 30),
             ContinueButton(role: role),

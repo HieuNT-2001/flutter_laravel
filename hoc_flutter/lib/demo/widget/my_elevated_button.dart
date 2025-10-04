@@ -26,7 +26,7 @@ class MyElevatedButton extends StatelessWidget {
         //   disabledBackgroundColor: Colors.grey,
         //   disabledForegroundColor: Colors.white,
         // ),
-        label: const Text("Elevated Button", style: TextStyle(fontSize: 28)),
+        label: const Text('Elevated Button', style: TextStyle(fontSize: 28)),
         icon: const Icon(Icons.edit, size: 32),
       ),
     );

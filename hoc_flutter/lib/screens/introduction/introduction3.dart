@@ -12,7 +12,7 @@ class Introduction3 extends StatelessWidget {
       body: Container(
         decoration: const BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("assets/images/yard.jpg"),
+            image: AssetImage('assets/images/yard.jpg'),
             fit: BoxFit.cover,
           ),
         ),
@@ -24,7 +24,7 @@ class Introduction3 extends StatelessWidget {
                 alignment: Alignment.topRight,
                 child: ElevatedButton.icon(
                   onPressed: () {},
-                  label: const Text("Tiếng việt"),
+                  label: const Text('Tiếng việt'),
                   icon: const Icon(Icons.language),
                   style: ElevatedButton.styleFrom(
                     foregroundColor: Colors.blue[900],
@@ -33,19 +33,19 @@ class Introduction3 extends StatelessWidget {
               ),
               const SizedBox(height: 8),
               Text(
-                role == "customer"
-                    ? "Việc lớn việc bé\nAlo Vua Thợ nhé!"
-                    : "Hỗ trợ nghiệp vụ",
+                role == 'customer'
+                    ? 'Việc lớn việc bé\nAlo Vua Thợ nhé!'
+                    : 'Hỗ trợ nghiệp vụ',
                 style: TextStyle(
                   fontSize: 32,
                   fontWeight: FontWeight.bold,
-                  color: role == "customer" ? Colors.black : Colors.blue[900],
+                  color: role == 'customer' ? Colors.black : Colors.blue[900],
                 ),
                 textAlign: TextAlign.center,
               ),
-              ?role != "customer"
+              ?role != 'customer'
                   ? Text(
-                      "Nâng cao tay nghề với các khóa\nđào tạo hàng đầu.",
+                      'Nâng cao tay nghề với các khóa\nđào tạo hàng đầu.',
                       style: TextStyle(color: Colors.blue[900], fontSize: 16),
                       textAlign: TextAlign.center,
                     )
@@ -57,7 +57,7 @@ class Introduction3 extends StatelessWidget {
                   Expanded(
                     child: ContinueButton(
                       role: role,
-                      label: "Bắt đầu",
+                      label: 'Bắt đầu',
                       targetPage: Home(role: role),
                     ),
                   ),

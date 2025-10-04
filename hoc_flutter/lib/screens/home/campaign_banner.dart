@@ -9,7 +9,7 @@ class CampaignBanner extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         const Text(
-          "Chiến dịch",
+          'Chiến dịch',
           style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
         ),
         const SizedBox(height: 8),
@@ -19,7 +19,7 @@ class CampaignBanner extends StatelessWidget {
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(10),
             image: const DecorationImage(
-              image: AssetImage("assets/images/campaign.jpg"),
+              image: AssetImage('assets/images/campaign.jpg'),
             ),
           ),
         ),

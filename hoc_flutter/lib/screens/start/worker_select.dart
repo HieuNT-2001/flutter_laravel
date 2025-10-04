@@ -26,11 +26,11 @@ class WorkerSelect extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Expanded(
-                child: Image.asset("assets/images/tho.png", fit: BoxFit.cover),
+                child: Image.asset('assets/images/tho.png', fit: BoxFit.cover),
               ),
               const SizedBox(height: 10),
               Text(
-                "THỢ",
+                'THỢ',
                 style: TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.bold,

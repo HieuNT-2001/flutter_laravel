@@ -26,7 +26,7 @@ class CustomerSelect extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                "KHÁCH",
+                'KHÁCH',
                 style: TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
@@ -36,7 +36,7 @@ class CustomerSelect extends StatelessWidget {
               const SizedBox(height: 10),
               Expanded(
                 child: Image.asset(
-                  "assets/images/khach.png",
+                  'assets/images/khach.png',
                   fit: BoxFit.cover,
                 ),
               ),

@@ -10,7 +10,7 @@ class MyDemo1 extends StatelessWidget {
         Container(
           decoration: const BoxDecoration(
             image: DecorationImage(
-              image: AssetImage("assets/images/new_york_city.jpg"),
+              image: AssetImage('assets/images/new_york_city.jpg'),
               fit: BoxFit.cover,
             ),
           ),
@@ -28,12 +28,12 @@ class MyDemo1 extends StatelessWidget {
               child: Column(
                 children: [
                   Text(
-                    "TinCoder",
+                    'TinCoder',
                     style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                   ),
                   SizedBox(height: 20),
                   Text(
-                    "Kenh chia se lap trinh Flutter hoan toan mien phi. Kenh chia se lap trinh Flutter hoan toan mien phi. Kenh chia se lap trinh Flutter hoan toan mien phi.",
+                    'Kenh chia se lap trinh Flutter hoan toan mien phi. Kenh chia se lap trinh Flutter hoan toan mien phi. Kenh chia se lap trinh Flutter hoan toan mien phi.',
                   ),
                 ],
               ),

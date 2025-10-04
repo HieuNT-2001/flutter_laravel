@@ -26,7 +26,7 @@ class MyOutlinedButton extends StatelessWidget {
         //   disabledBackgroundColor: Colors.grey,
         //   disabledForegroundColor: Colors.white,
         // ),
-        label: const Text("Outlined Button", style: TextStyle(fontSize: 28)),
+        label: const Text('Outlined Button', style: TextStyle(fontSize: 28)),
         icon: const Icon(Icons.delete, size: 32),
       ),
     );

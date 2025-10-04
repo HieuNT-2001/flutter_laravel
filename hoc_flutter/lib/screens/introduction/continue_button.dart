@@ -20,8 +20,8 @@ class ContinueButton extends StatelessWidget {
         MaterialPageRoute(builder: (context) => targetPage),
       ),
       style: ElevatedButton.styleFrom(
-        foregroundColor: role == "customer" ? Colors.black : Colors.white,
-        backgroundColor: role == "customer" ? Colors.amber : Colors.blue[900],
+        foregroundColor: role == 'customer' ? Colors.black : Colors.white,
+        backgroundColor: role == 'customer' ? Colors.amber : Colors.blue[900],
       ),
       child: Text(
         label,

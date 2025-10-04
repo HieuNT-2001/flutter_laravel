@@ -43,7 +43,7 @@ class _UserEditState extends State<UserEdit> {
     if (!mounted) return;
     ScaffoldMessenger.of(
       context,
-    ).showSnackBar(const SnackBar(content: Text("Đã cập nhật User")));
+    ).showSnackBar(const SnackBar(content: Text('Đã cập nhật User')));
 
     Navigator.pop(
       context,
@@ -58,7 +58,7 @@ class _UserEditState extends State<UserEdit> {
     _emailController.text = widget.user.email;
     _phoneController.text = widget.user.phone;
     _dateController.text =
-        "${widget.user.dateOfBirth.day}/${widget.user.dateOfBirth.month}/${widget.user.dateOfBirth.year}";
+        '${widget.user.dateOfBirth.day}/${widget.user.dateOfBirth.month}/${widget.user.dateOfBirth.year}';
     _selectedDate = widget.user.dateOfBirth;
   }
 
@@ -186,7 +186,7 @@ class _UserEditState extends State<UserEdit> {
                           onDateSelected: (date) {
                             _selectedDate = date;
                             _dateController.text =
-                                "${date.day}/${date.month}/${date.year}";
+                                '${date.day}/${date.month}/${date.year}';
                           },
                         ),
                         decoration: const InputDecoration(
@@ -204,7 +204,7 @@ class _UserEditState extends State<UserEdit> {
                 width: double.infinity,
                 child: ElevatedButton.icon(
                   icon: const Icon(Icons.save),
-                  label: const Text("Lưu người dùng"),
+                  label: const Text('Lưu người dùng'),
                   onPressed: _submit,
                 ),
               ),

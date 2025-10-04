@@ -28,7 +28,7 @@ class HomeBottomBar extends StatelessWidget {
                 ),
               ),
               child: const Text(
-                "Đăng ký",
+                'Đăng ký',
                 style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
               ),
             ),
@@ -49,7 +49,7 @@ class HomeBottomBar extends StatelessWidget {
                 backgroundColor: isCustomer ? Colors.amber : Colors.blue[900],
               ),
               child: const Text(
-                "Đăng nhập",
+                'Đăng nhập',
                 style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
               ),
             ),

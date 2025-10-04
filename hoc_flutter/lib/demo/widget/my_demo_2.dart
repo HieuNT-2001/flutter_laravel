@@ -23,7 +23,7 @@ class MyDemo2 extends StatelessWidget {
                           CircleAvatar(
                             radius: 25,
                             backgroundImage: AssetImage(
-                              "assets/images/new_york_city.jpg",
+                              'assets/images/new_york_city.jpg',
                             ),
                           ),
                           SizedBox(width: 10),
@@ -32,13 +32,13 @@ class MyDemo2 extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                "Nguyen Van A",
+                                'Nguyen Van A',
                                 style: TextStyle(
                                   fontSize: 16,
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
-                              Text("Ha noi"),
+                              Text('Ha noi'),
                             ],
                           ),
                         ],
@@ -59,7 +59,7 @@ class MyDemo2 extends StatelessWidget {
                                 color: Colors.white,
                                 size: 24,
                               ),
-                              Text("5"),
+                              Text('5'),
                             ],
                           ),
                         ],

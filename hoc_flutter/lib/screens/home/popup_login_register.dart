@@ -15,11 +15,11 @@ class PopupLoginRegister extends StatelessWidget {
         child: Column(
           children: [
             const Text(
-              "Sử dụng vua thợ ngay!",
+              'Sử dụng vua thợ ngay!',
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
             const Text(
-              "Chỉ cần 10 giây, bạn có thể truy cập vào các dịch vụ của chúng tôi và đặt thợ",
+              'Chỉ cần 10 giây, bạn có thể truy cập vào các dịch vụ của chúng tôi và đặt thợ',
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 10),
@@ -45,7 +45,7 @@ class PopupLoginRegister extends StatelessWidget {
                       ),
                     ),
                     child: const Text(
-                      "Đăng ký",
+                      'Đăng ký',
                       style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
@@ -71,7 +71,7 @@ class PopupLoginRegister extends StatelessWidget {
                           : Colors.blue[900],
                     ),
                     child: const Text(
-                      "Đăng nhập",
+                      'Đăng nhập',
                       style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.bold,

@@ -20,7 +20,7 @@ class MyContainer extends StatelessWidget {
       ),
       transform: Matrix4.rotationZ(0.4),
       child: const Text(
-        "TinCoder",
+        'TinCoder',
         style: TextStyle(fontSize: 30, color: Colors.white),
       ),
     );

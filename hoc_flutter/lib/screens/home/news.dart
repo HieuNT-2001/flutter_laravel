@@ -10,7 +10,7 @@ class News extends StatefulWidget {
 }
 
 class _NewsState extends State<News> {
-  final Uri _url = Uri.parse("https://vuatho.com/vi/press");
+  final Uri _url = Uri.parse('https://vuatho.com/vi/press');
 
   Future<void> _launchNews() async {
     if (!await launchUrl(_url, mode: LaunchMode.inAppWebView)) {
@@ -24,7 +24,7 @@ class _NewsState extends State<News> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         const Text(
-          "Tin tức & sự kiện",
+          'Tin tức & sự kiện',
           style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
         ),
         ...List.generate(3, (index) {
@@ -37,7 +37,7 @@ class _NewsState extends State<News> {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
                 image: const DecorationImage(
-                  image: AssetImage("assets/images/news.jpg"),
+                  image: AssetImage('assets/images/news.jpg'),
                   fit: BoxFit.fill,
                 ),
               ),

@@ -14,13 +14,13 @@ class MyCustomWidget extends StatelessWidget {
               Expanded(
                 flex: 1,
                 child: Text(
-                  "Username:",
+                  'Username:',
                   style: TextStyle(fontSize: 14, color: Colors.grey),
                 ),
               ),
               Expanded(
                 flex: 3,
-                child: Text("Nguyen van An", style: TextStyle(fontSize: 14)),
+                child: Text('Nguyen van An', style: TextStyle(fontSize: 14)),
               ),
             ],
           ),
@@ -30,13 +30,13 @@ class MyCustomWidget extends StatelessWidget {
               Expanded(
                 flex: 1,
                 child: Text(
-                  "Email:",
+                  'Email:',
                   style: TextStyle(fontSize: 14, color: Colors.grey),
                 ),
               ),
               Expanded(
                 flex: 3,
-                child: Text("abc@gmail.com", style: TextStyle(fontSize: 14)),
+                child: Text('abc@gmail.com', style: TextStyle(fontSize: 14)),
               ),
             ],
           ),
@@ -46,14 +46,14 @@ class MyCustomWidget extends StatelessWidget {
               Expanded(
                 flex: 1,
                 child: Text(
-                  "Address:",
+                  'Address:',
                   style: TextStyle(fontSize: 14, color: Colors.grey),
                 ),
               ),
               Expanded(
                 flex: 3,
                 child: Text(
-                  "Hong Bang, Hai Phong",
+                  'Hong Bang, Hai Phong',
                   style: TextStyle(fontSize: 14),
                 ),
               ),
@@ -74,7 +74,7 @@ class MyCustomWidget extends StatelessWidget {
                       borderRadius: BorderRadius.circular(5),
                     ),
                   ),
-                  child: const Text("Cancel"),
+                  child: const Text('Cancel'),
                 ),
               ),
               const SizedBox(width: 10),
@@ -88,7 +88,7 @@ class MyCustomWidget extends StatelessWidget {
                       borderRadius: BorderRadius.circular(5),
                     ),
                   ),
-                  child: const Text("Submit"),
+                  child: const Text('Submit'),
                 ),
               ),
             ],

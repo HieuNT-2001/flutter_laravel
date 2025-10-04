@@ -24,7 +24,7 @@ class ImagePickerHelper {
           children: [
             ListTile(
               leading: const Icon(Icons.photo_library),
-              title: const Text("Chọn từ Thư viện"),
+              title: const Text('Chọn từ Thư viện'),
               onTap: () async {
                 Navigator.of(context).pop();
                 final file = await pickImage(ImageSource.gallery);
@@ -33,7 +33,7 @@ class ImagePickerHelper {
             ),
             ListTile(
               leading: const Icon(Icons.camera_alt),
-              title: const Text("Chụp ảnh"),
+              title: const Text('Chụp ảnh'),
               onTap: () async {
                 Navigator.of(context).pop();
                 final file = await pickImage(ImageSource.camera);

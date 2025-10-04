@@ -21,7 +21,7 @@ class Event extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           const Text(
-            "Sự kiện đang diễn ra",
+            'Sự kiện đang diễn ra',
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
           ),
           const SizedBox(height: 8),
@@ -31,7 +31,7 @@ class Event extends StatelessWidget {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10),
               image: const DecorationImage(
-                image: AssetImage("assets/images/event.jpg"),
+                image: AssetImage('assets/images/event.jpg'),
                 fit: BoxFit.fill,
               ),
             ),

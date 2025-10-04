@@ -26,7 +26,7 @@ class _HomeState extends State<Home> {
   @override
   void initState() {
     super.initState();
-    isCustomer = widget.role == "customer";
+    isCustomer = widget.role == 'customer';
   }
 
   @override

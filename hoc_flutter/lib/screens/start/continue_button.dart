@@ -19,13 +19,13 @@ class ContinueButton extends StatelessWidget {
     return ElevatedButton(
       onPressed: () => _nextPage(context),
       style: ElevatedButton.styleFrom(
-        backgroundColor: role == "worker" ? Colors.blue[900] : Colors.amber,
+        backgroundColor: role == 'worker' ? Colors.blue[900] : Colors.amber,
         minimumSize: const Size(double.infinity, 50),
       ),
       child: Text(
-        role.isEmpty ? "Vui lòng chọn một vai trò để tiếp tục" : "Tiếp tục",
+        role.isEmpty ? 'Vui lòng chọn một vai trò để tiếp tục' : 'Tiếp tục',
         style: TextStyle(
-          color: role == "worker" ? Colors.white : Colors.black,
+          color: role == 'worker' ? Colors.white : Colors.black,
           fontSize: 18,
         ),
       ),

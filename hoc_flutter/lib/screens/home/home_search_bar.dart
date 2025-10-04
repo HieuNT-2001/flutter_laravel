@@ -8,7 +8,7 @@ class HomeSearchBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SearchBar(
-      hintText: "Tìm kiếm dịch vụ",
+      hintText: 'Tìm kiếm dịch vụ',
       leading: const Icon(Icons.search),
       elevation: const WidgetStatePropertyAll(0),
       backgroundColor: const WidgetStatePropertyAll(Colors.transparent),

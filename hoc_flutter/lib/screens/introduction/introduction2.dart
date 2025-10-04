@@ -13,7 +13,7 @@ class Introduction2 extends StatelessWidget {
       body: Container(
         decoration: const BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("assets/images/yard.jpg"),
+            image: AssetImage('assets/images/yard.jpg'),
             fit: BoxFit.cover,
           ),
         ),
@@ -25,7 +25,7 @@ class Introduction2 extends StatelessWidget {
                 alignment: Alignment.topRight,
                 child: ElevatedButton.icon(
                   onPressed: () {},
-                  label: const Text("Tiếng việt"),
+                  label: const Text('Tiếng việt'),
                   icon: const Icon(Icons.language),
                   style: ElevatedButton.styleFrom(
                     foregroundColor: Colors.blue[900],
@@ -34,19 +34,19 @@ class Introduction2 extends StatelessWidget {
               ),
               const SizedBox(height: 8),
               Text(
-                role == "customer"
-                    ? "Bất cứ việc gì\nBất cứ nơi đâu"
-                    : "Công việc linh động",
+                role == 'customer'
+                    ? 'Bất cứ việc gì\nBất cứ nơi đâu'
+                    : 'Công việc linh động',
                 style: TextStyle(
                   fontSize: 32,
                   fontWeight: FontWeight.bold,
-                  color: role == "customer" ? Colors.black : Colors.blue[900],
+                  color: role == 'customer' ? Colors.black : Colors.blue[900],
                 ),
                 textAlign: TextAlign.center,
               ),
-              ?role != "customer"
+              ?role != 'customer'
                   ? Text(
-                      "Làm việc mọi lúc, mọi nơi, tăng\nthu nhập không giới hạn.",
+                      'Làm việc mọi lúc, mọi nơi, tăng\nthu nhập không giới hạn.',
                       style: TextStyle(color: Colors.blue[900], fontSize: 16),
                       textAlign: TextAlign.center,
                     )
@@ -59,7 +59,7 @@ class Introduction2 extends StatelessWidget {
                   Expanded(
                     child: ContinueButton(
                       role: role,
-                      label: "Tiếp tục",
+                      label: 'Tiếp tục',
                       targetPage: Introduction3(role: role),
                     ),
                   ),

@@ -14,7 +14,7 @@ class MySizedBox extends StatelessWidget {
           backgroundColor: Colors.green,
           foregroundColor: Colors.white,
         ),
-        child: const Text("TinCoder", style: TextStyle(fontSize: 30)),
+        child: const Text('TinCoder', style: TextStyle(fontSize: 30)),
       ),
     );
   }
