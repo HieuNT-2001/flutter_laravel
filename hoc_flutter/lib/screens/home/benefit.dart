@@ -1,20 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:hoc_flutter/widgets/image_card_item.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class Benefit extends StatefulWidget {
+class Benefit extends StatelessWidget {
   const Benefit({super.key});
 
-  @override
-  // ignore: library_private_types_in_public_api
-  _BenefitState createState() => _BenefitState();
-}
-
-class _BenefitState extends State<Benefit> {
-  final Uri _url = Uri.parse('https://vuatho.com/vi#worker-benefit');
-
   Future<void> _launchBenefits() async {
-    if (!await launchUrl(_url, mode: LaunchMode.inAppWebView)) {
-      throw Exception('Không mở được $_url');
+    Uri url = Uri.parse('https://vuatho.com/vi#worker-benefit');
+    if (!await launchUrl(url, mode: LaunchMode.inAppWebView)) {
+      throw Exception('Không mở được $url');
     }
   }
 
@@ -27,20 +21,13 @@ class _BenefitState extends State<Benefit> {
           'Quyền lợi',
           style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
         ),
+        const SizedBox(height: 8),
         ...List.generate(3, (index) {
           return GestureDetector(
             onTap: () => _launchBenefits(),
-            child: Container(
-              height: 200,
-              width: double.infinity,
-              margin: const EdgeInsets.symmetric(vertical: 8),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-                image: const DecorationImage(
-                  image: AssetImage('assets/images/Benefit.jpg'),
-                  fit: BoxFit.fill,
-                ),
-              ),
+            child: const ImageCardItem(
+              imageSrc: 'assets/images/Benefit.jpg',
+              spaceAfter: 16,
             ),
           );
         }),

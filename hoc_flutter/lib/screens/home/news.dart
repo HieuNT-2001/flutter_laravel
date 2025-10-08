@@ -1,20 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:hoc_flutter/widgets/image_card_item.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class News extends StatefulWidget {
+class News extends StatelessWidget {
   const News({super.key});
 
-  @override
-  // ignore: library_private_types_in_public_api
-  _NewsState createState() => _NewsState();
-}
-
-class _NewsState extends State<News> {
-  final Uri _url = Uri.parse('https://vuatho.com/vi/press');
-
   Future<void> _launchNews() async {
-    if (!await launchUrl(_url, mode: LaunchMode.inAppWebView)) {
-      throw Exception('Không mở được $_url');
+    Uri url = Uri.parse('https://vuatho.com/vi/press');
+    if (!await launchUrl(url, mode: LaunchMode.inAppWebView)) {
+      throw Exception('Không mở được $url');
     }
   }
 
@@ -27,20 +21,13 @@ class _NewsState extends State<News> {
           'Tin tức & sự kiện',
           style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
         ),
+        const SizedBox(height: 8),
         ...List.generate(3, (index) {
           return GestureDetector(
             onTap: () => _launchNews(),
-            child: Container(
-              height: 200,
-              width: double.infinity,
-              margin: const EdgeInsets.symmetric(vertical: 8),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-                image: const DecorationImage(
-                  image: AssetImage('assets/images/news.jpg'),
-                  fit: BoxFit.fill,
-                ),
-              ),
+            child: const ImageCardItem(
+              imageSrc: 'assets/images/news.jpg',
+              spaceAfter: 16,
             ),
           );
         }),

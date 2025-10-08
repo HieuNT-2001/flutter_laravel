@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:hoc_flutter/screens/home/benefit.dart';
-import 'package:hoc_flutter/screens/home/campaign_banner.dart';
-import 'package:hoc_flutter/screens/home/event.dart';
 import 'package:hoc_flutter/screens/home/home_app_bar.dart';
 import 'package:hoc_flutter/screens/home/home_bottom_bar.dart';
-import 'package:hoc_flutter/screens/home/home_search_bar.dart';
+import 'package:hoc_flutter/screens/home/popup_login_register.dart';
+import 'package:hoc_flutter/widgets/custom_search_bar.dart';
 import 'package:hoc_flutter/screens/home/list_service.dart';
 import 'package:hoc_flutter/screens/home/news.dart';
+import 'package:hoc_flutter/widgets/image_card_item.dart';
 
 class Home extends StatefulWidget {
   final String role;
@@ -46,16 +46,26 @@ class _HomeState extends State<Home> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               if (isCustomer) ...[
-                const CampaignBanner(),
-                const SizedBox(height: 16),
-                HomeSearchBar(isCustomer: isCustomer),
-                const SizedBox(height: 16),
+                const ImageCardItem(
+                  title: 'Chiến dịch',
+                  imageSrc: 'assets/images/campaign.jpg',
+                  spaceAfter: 16,
+                ),
+                const CustomSearchBar(spaceAfter: 16),
                 const ListService(),
               ],
-              Event(isCustomer: isCustomer),
-              const SizedBox(height: 16),
+              ImageCardItem(
+                spaceAfter: 16,
+                title: 'Sự kiện đang diễn ra',
+                imageSrc: 'assets/images/event.jpg',
+                onTap: () => showModalBottomSheet(
+                  context: context,
+                  builder: (context) {
+                    return PopupLoginRegister(isCustomer: isCustomer);
+                  },
+                ),
+              ),
               const Benefit(),
-              const SizedBox(height: 16),
               const News(),
             ],
           ),
